@@ -1,0 +1,11 @@
+employee_id,name,department,status,join_date,utilization_pct
+101,Aarav Sharma,Engineering,Active,2024-01-15,85
+102,Priya Mehta,Engineering,Active,2023-08-10,92
+103,Rohan Gupta,Sales,Active,2025-02-01,78
+104,Neha Verma,HR,Active,2022-11-20,70
+105,Karan Singh,Engineering,Active,2024-05-12,88
+106,Ananya Rao,Marketing,Active,2025-01-05,75
+107,Vikram Patel,Engineering,Inactive,2023-03-18,0
+108,Sneha Iyer,Finance,Active,2024-09-01,81
+109,Rahul Jain,Sales,Active,2023-12-11,84
+110,Meera Nair,Engineering,Active,2025-04-07,90

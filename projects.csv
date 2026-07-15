@@ -1,0 +1,6 @@
+project_id,project_name,status,budget,completion_pct,delay_days
+P001,Project Alpha,On Track,500000,65,5
+P002,Project Beta,Delayed,750000,45,30
+P003,Project Gamma,On Track,300000,80,0
+P004,Project Delta,At Risk,600000,55,15
+P005,Project Omega,Delayed,900000,35,45

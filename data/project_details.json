@@ -1,0 +1,27 @@
+[
+  {
+    "project_id": "P001",
+    "description": "Migration of core legacy CRM systems to cloud-native microservices architecture.",
+    "client_name": "Acme Corp"
+  },
+  {
+    "project_id": "P002",
+    "description": "Custom LLM integrations and semantic search modules for engineering documentation.",
+    "client_name": "Zenith Tech"
+  },
+  {
+    "project_id": "P003",
+    "description": "Revamping client-facing portal, checkout funnel, and onboarding flow UI/UX.",
+    "client_name": "BlueWave"
+  },
+  {
+    "project_id": "P004",
+    "description": "Information security certification audit, policy reviews, and pen-testing.",
+    "client_name": "Nova Systems"
+  },
+  {
+    "project_id": "P005",
+    "description": "Supply chain route optimization modeling and dashboard analytics deployment.",
+    "client_name": "Orion Ltd"
+  }
+]
