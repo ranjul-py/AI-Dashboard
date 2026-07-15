@@ -22,7 +22,8 @@ class EmailService:
         self.smtp_password = smtp_password or os.getenv("SMTP_PASSWORD")
         
         # Outbox log path for offline simulation
-        self.simulated_outbox_path = "d:/project/data/simulated_email_outbox.log"
+        _base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.simulated_outbox_path = os.path.join(_base, "data", "simulated_email_outbox.log")
 
     def is_smtp_configured(self) -> bool:
         """Verifies if SMTP coordinates are set."""

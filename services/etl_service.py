@@ -17,7 +17,7 @@ class ETLService:
     def __init__(self, db_manager: DBManager):
         self.db = db_manager
         self.api_service = APIService()
-        self.source_dir = "d:/project"
+        self.source_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     def run_pipeline(self) -> dict:
         """

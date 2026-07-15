@@ -9,7 +9,10 @@ class DBManager:
     OOP Database Manager for SQLite operations, including user authentication,
     dashboard query abstractions, and activity logging.
     """
-    def __init__(self, db_path: str = "d:/project/database/executive_dashboard.db"):
+    def __init__(self, db_path: str = None):
+        if db_path is None:
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            db_path = os.path.join(base_dir, "executive_dashboard.db")
         self.db_path = db_path
         # Ensure database directory exists
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
@@ -27,7 +30,7 @@ class DBManager:
         cursor = conn.cursor()
         
         # Read and execute schema
-        schema_path = "d:/project/database/schema.sql"
+        schema_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "schema.sql")
         if os.path.exists(schema_path):
             with open(schema_path, 'r') as f:
                 schema_sql = f.read()

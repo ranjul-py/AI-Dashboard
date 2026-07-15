@@ -56,7 +56,10 @@ class ReportGenerator:
     Generates structured, executive-level PDF documents from markdown text
     using ReportLab.
     """
-    def __init__(self, output_dir: str = "d:/project/data"):
+    def __init__(self, output_dir: str = None):
+        if output_dir is None:
+            _base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            output_dir = os.path.join(_base, "data")
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
