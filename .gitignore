@@ -27,6 +27,7 @@ secrets.toml
 *.db
 *.sqlite
 *.sqlite3
+!database/executive_dashboard.db
 
 # Logs
 *.log
